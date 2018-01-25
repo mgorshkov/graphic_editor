@@ -1,16 +1,18 @@
 #pragma once
 
-#include "shape.h";
+#include "shape.h"
+#include "graphiccontext.h"
 
 /**
- * @brief Circle.
+ * @brief Circle shape.
  */
 class Circle : public Shape
 {
 public:
     Circle(const Rect& _rect);
 
-    void Visualize() override
+    /// Draw the circle on screen
+    void Visualize(GraphicContext& context) override
     {
     }
 
