@@ -1,35 +1,32 @@
 #pragma once
 
-#include <vector>
-
-class Primitive;
 /**
- * @brief Document operations (new/import/export).
+ * @brief Editor operations.
  */
-class Document
+class Editor
 {
 public:
-    /// Starts a new document.
-    Document()
-    {
-    }
+    Editor();
 
-    /// Import a document from the file.
-    void Import(const std::string& fileName)
-    {
-    }
+    /// Clears the document
+    void StartNewDocument();
 
-    /// Export a document to the file.
-    void Export(const std::string& fileName)
-    {
-    }
+    /// Sets color as current for document
+    void SelectColor(Color color);
+    /// Makes line tool current
+    void SelectLineTool();
+    /// Makes circle tool current
+    void SelectCircleTool();
 
-    /// Adds a primitive.
-    void AddPrimitive(Primitive* primitive);
-    {
-        primitives.push_back(primitive);
-    }
+    /// Creates selected shape by given rect and adds it to the document
+    void Draw(const Rect& rect);    
+
+    /// Imports the document from the file
+    void ImportDocument(const std::string& filename);
+    /// Imports the document from the file
+    void ExportDocument(const std::string& filename);
 
 private:
-    std::vector<Privitive*> primitives;
+    Document document;
+    Color color = Color::Default;
 };

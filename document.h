@@ -3,14 +3,15 @@
 #include <memory>
 #include <vector>
 
-class Primitive;
+#include "shape.h"
+
 /**
  * @brief Document operations (new/import/export).
  */
 class Document
 {
 public:
-    /// Starts a new document.
+    /// Clears a new document.
     void Clear()
     {
         shapes.clear();

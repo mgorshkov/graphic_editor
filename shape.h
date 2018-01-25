@@ -14,8 +14,11 @@ public:
     virtual void Visualize() = 0;
 
     /// Set color
-    virtual void SetColor(Color color) = 0;
+    void SetColor(Color _color)
+    {
+        color = _color;
+    }
 
-    /// Set line width
-    virtual void SetLineWidth(int width) = 0;
+private:
+    Color color;
 };
