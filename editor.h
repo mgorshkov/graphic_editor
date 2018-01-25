@@ -19,7 +19,7 @@ public:
     void SelectCircleTool();
 
     /// Creates selected shape by given rect and adds it to the document
-    void Draw(const Rect& rect);    
+    void Draw(const Rect& rect);
 
     /// Imports the document from the file
     void ImportDocument(const std::string& filename);

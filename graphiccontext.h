@@ -1,3 +1,5 @@
+#pragma once
+
 #include "color.h"
 
 class GraphicContext
