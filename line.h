@@ -1,12 +1,13 @@
 #pragma once
 
-#include "shape.h"
+#include "rect.h"
+#include "ishape.h"
 #include "graphiccontext.h"
 
 /**
  * @brief Line abstraction.
  */
-class Line : public Shape
+class Line : public IShape
 {
 public:
     Line(const Rect& _rect);

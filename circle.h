@@ -1,12 +1,13 @@
 #pragma once
 
-#include "shape.h"
+#include "rect.h"
+#include "ishape.h"
 #include "graphiccontext.h"
 
 /**
  * @brief Circle shape.
  */
-class Circle : public Shape
+class Circle : public IShape
 {
 public:
     Circle(const Rect& _rect);

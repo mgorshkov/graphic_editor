@@ -4,7 +4,7 @@
 #include <vector>
 #include <string>
 
-#include "shape.h"
+#include "ishape.h"
 
 /**
  * @brief Document operations (new/import/export).

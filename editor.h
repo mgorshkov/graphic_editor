@@ -4,10 +4,12 @@
 #include "igraphiccontext.h"
 #include "commandbutton.h"
 #include "document.h"
+#include "circle.h"
+#include "line.h"
 #include "color.h"
 
 /**
- * @brief Editor object declaration.
+ * @brief Editor object.
  */
 class Editor
 {
@@ -64,15 +66,18 @@ public:
     /// Imports the document
     void Import()
     {
+        ImportDocument("file-to-import");
     }
     /// Exports the document
     void Export()
     {
+        ImportDocument("file-to-export");
     }
 
     /// Runs the editor
     void Run()
     {
+        controller->Run();
     }
 
 private:
