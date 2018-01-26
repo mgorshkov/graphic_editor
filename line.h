@@ -4,7 +4,7 @@
 #include "graphiccontext.h"
 
 /**
- * @brief Line.
+ * @brief Line abstraction.
  */
 class Line : public Shape
 {

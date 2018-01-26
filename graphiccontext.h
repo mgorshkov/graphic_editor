@@ -1,9 +1,14 @@
 #pragma once
 
-#include "color.h"
+#include "igraphiccontext.h"
 
-class GraphicContext
+/**
+ * @brief The context to draw shapes.
+ */
+class GraphicContext : public IGraphicContext
 {
 public:
-    void DrawPixel(int x, int y, Color color);
+    void DrawPixel(int x, int y, Color color) override
+    {
+    }
 };

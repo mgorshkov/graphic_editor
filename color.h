@@ -1,7 +1,7 @@
 #pragma once
 
 /**
- * @brief Color
+ * @brief Color of the shape.
  */
 enum class Color
 {

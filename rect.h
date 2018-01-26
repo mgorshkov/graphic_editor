@@ -1,5 +1,8 @@
 #pragma once
 
+/**
+ * @brief Rectangle abstraction.
+ */
 struct Rect
 {
     int x;

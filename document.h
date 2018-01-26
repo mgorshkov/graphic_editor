@@ -2,6 +2,7 @@
 
 #include <memory>
 #include <vector>
+#include <string>
 
 #include "shape.h"
 
@@ -28,11 +29,11 @@ public:
     }
 
     /// Adds a shape.
-    void AddShape(std::shared_ptr<Shape> shape);
+    void AddShape(std::shared_ptr<IShape> shape)
     {
-        shape.push_back(shape);
+        shapes.push_back(shape);
     }
 
 private:
-    std::vector<std::shared_ptr<Shape>> shapes;
+    std::vector<std::shared_ptr<IShape>> shapes;
 };
