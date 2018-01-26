@@ -1,3 +1,0 @@
-/home/mgorshkov/Work/graphic_editor/CMakeFiles/rebuild_cache.dir
-/home/mgorshkov/Work/graphic_editor/CMakeFiles/edit_cache.dir
-/home/mgorshkov/Work/graphic_editor/CMakeFiles/graphic_editor.dir

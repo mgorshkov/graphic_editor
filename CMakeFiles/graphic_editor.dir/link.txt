@@ -1,1 +1,0 @@
-/usr/bin/c++  -std=c++1z  -rdynamic CMakeFiles/graphic_editor.dir/main.cpp.o  -o graphic_editor 
